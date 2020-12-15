@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html><head>
+
+</head>
+  <body>
+ <div id="dev-products"></div>
+
+  </body>
+</html>
+
+
+
+
+function getNumOfStickers(str, target) {
+
+  let stickerMap = {};
+
+  let stikcers = 0;
+
+  for (const letter of str) {
+
+  if (stickerMap[letter]) {
+
+  stickerMap[letter]++;
+
+  } else {
+
+  stickerMap[letter] = 1;
+
+  }
+
+  }
+
+  for(let i = 0; i < target.length; i++)
+  {
+
+  if(stickerMap.has(stickerMap[letter]))
+  {
+
+  target.splice(i, 1);
+
+  stickerMap.delete();
+
+  }
+
+  }
+
+  if(!target.length && !stickerMap.size)
+  {
+
+  stikcers++;
+
+  } else {
+
+  }
+
+  }
+
+
